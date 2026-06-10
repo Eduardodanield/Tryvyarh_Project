@@ -67,7 +67,7 @@ $totalLeads      = (int) ($db->fetchOne("SELECT COUNT(*) AS n FROM leads")['n'] 
       Bem-vinda ao painel administrativo da <strong>Trivya RH</strong>. Aqui você pode editar todos os conteúdos do site sem precisar alterar código.
     </p>
     <div style="font-size:13px;color:#8A9BB0;border-top:1px solid #E9ECEF;padding-top:14px;">
-      <div>🌐 <a href="<?= e(SITE_URL) ?>/public/" target="_blank" style="color:#0ECAD4;">Ver o site ao vivo</a></div>
+      <div>🌐 <a href="<?= e(SITE_URL) ?>/" target="_blank" style="color:#0ECAD4;">Ver o site ao vivo</a></div>
       <div style="margin-top:6px;">🔒 Sessão segura · <?= e($adminAtual['email']) ?></div>
     </div>
   </div>

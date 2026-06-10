@@ -103,7 +103,7 @@ $csrfToken = generateCsrf('admin_login');
     </form>
 
     <p class="adm-login-divider" style="margin-top:24px;">
-      <a href="<?= e(SITE_URL) ?>/public/">← Voltar ao site</a>
+      <a href="<?= e(SITE_URL) ?>/">← Voltar ao site</a>
     </p>
 
   </div>

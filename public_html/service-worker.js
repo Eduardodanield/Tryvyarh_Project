@@ -11,7 +11,7 @@ const CACHE_ASSETS   = 'trivya-assets-v1';
 
 // Assets estáticos para cache offline
 const ASSETS_PARA_CACHE = [
-  '/public/',
+  '/',
   '/assets/css/style.css',
   '/assets/css/components.css',
   '/assets/css/pages.css',
@@ -115,7 +115,7 @@ async function networkFirst(request) {
     if (cached) return cached;
 
     // Fallback para home se for uma página HTML
-    const homeCached = await caches.match('/public/');
+    const homeCached = await caches.match('/');
     if (homeCached) return homeCached;
 
     return new Response(

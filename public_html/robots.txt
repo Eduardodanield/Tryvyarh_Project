@@ -8,18 +8,12 @@ Allow: /
 # Proteger áreas privadas
 Disallow: /admin/
 Disallow: /api/
-Disallow: /assets/img/upload-cv/
-Disallow: /logs/
-Disallow: /config/
-Disallow: /includes/
-Disallow: /lib/
-Disallow: /database/
+Disallow: /uploads/curriculos/
 
 # Não indexar páginas de erro e utilitárias
-Disallow: /public/obrigado.php
-Disallow: /public/404.php
-Disallow: /public/500.php
+Disallow: /obrigado.php
+Disallow: /404.php
+Disallow: /500.php
 
 # Sitemap
-Sitemap: http://localhost/trivya-rh/public/sitemap.xml
-# Em produção, atualizar para: Sitemap: https://trivyarh.com.br/sitemap.xml
+Sitemap: https://trivyarh.com.br/sitemap.xml

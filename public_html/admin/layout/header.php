@@ -64,7 +64,7 @@ $menuLinks = [
       <?php endforeach; ?>
 
       <div class="adm-nav-section" style="margin-top:20px;">Site</div>
-      <a href="<?= e(SITE_URL) ?>/public/" target="_blank" class="adm-nav-link">
+      <a href="<?= e(SITE_URL) ?>/" target="_blank" class="adm-nav-link">
         <span class="icon">🌐</span> Ver Site
       </a>
     </nav>
