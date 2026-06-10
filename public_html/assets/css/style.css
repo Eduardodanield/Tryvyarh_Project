@@ -1,0 +1,76 @@
+/* ============================================================
+   TRIVYA RH — style.css
+   Variáveis, reset e base
+   ============================================================ */
+
+:root {
+    color-scheme: light;
+
+    /* PALETA OFICIAL TRIVYA RH */
+    --brand:    #C85A2A;    /* terracota — cor primária */
+    --brand-lt: #F4E8E0;    /* terracota claro — badges, fundo suave */
+    --brand-dk: #9A3E17;    /* terracota escuro — hover, ênfase */
+
+    /* ── Texto ── */
+    --dark:   #1A1A1A;      /* texto principal */
+    --mid:    #4A4A4A;      /* texto secundário */
+    --muted:  #8A8A8A;      /* texto desabilitado */
+
+    /* ── Fundos e bordas ── */
+    --border: #E0D8CE;      /* borda bege quente */
+    --bg:     #F5EFE8;      /* bege quente — fundo principal */
+    --white:  #EDE6DC;      /* bege claro — cards, surfaces */
+
+    /* ── Corporativo / Dark sections ── */
+    --navy:    #1B2B3A;     /* navy — títulos */
+    --navy-dk: #001233;     /* navy escuro — footer, diferenciais */
+
+    /* ── SPACING SCALE — base 8px ── */
+    --space-xs:  8px;
+    --space-sm:  16px;
+    --space-md:  24px;
+    --space-lg:  32px;
+    --space-xl:  48px;
+    --space-2xl: 64px;
+    --space-3xl: 96px;
+    --space-4xl: 128px;
+
+    /* ── Section rhythm ── */
+    --section-padding-y: var(--space-3xl);   /* 96px desktop */
+    --section-padding-x: 5%;
+
+    /* ── Container widths ── */
+    --container-max:     1200px;
+    --container-content: 1000px;
+    --container-text:    720px;
+
+    /* ── Header ── */
+    --header-height: 72px;
+}
+
+@media (max-width: 1024px) {
+    :root { --section-padding-y: var(--space-2xl); }
+}
+
+@media (max-width: 768px) {
+    :root { --section-padding-y: var(--space-xl); }
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--dark);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    background-color: #F5EFE8;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+a { color: inherit; text-decoration: none; }
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 5%; }

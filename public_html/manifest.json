@@ -1,0 +1,11 @@
+{
+  "name": "Trivya RH",
+  "short_name": "Trivya",
+  "description": "Consultoria de recrutamento e seleção em São Paulo.",
+  "start_url": "/trivya-rh/public/",
+  "display": "standalone",
+  "theme_color": "#001233",
+  "background_color": "#FFFFFF",
+  "lang": "pt-BR",
+  "icons": []
+}

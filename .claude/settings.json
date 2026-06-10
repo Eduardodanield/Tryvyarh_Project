@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/xampp/**)",
+      "Bash(php -r ' *)",
+      "PowerShell(& \"c:\\\\xampp\\\\php\\\\php.exe\" -r \"echo password_hash\\('Trivya@2025', PASSWORD_BCRYPT, ['cost' => 12]\\);\")",
+      "PowerShell(Get-ChildItem -Path \"c:\\\\xampp\\\\htdocs\\\\trivya-rh\" -Recurse | Where-Object { !$_.PSIsContainer } | Select-Object FullName, Length | Sort-Object FullName)",
+      "PowerShell(Get-ChildItem -Recurse -Path \"c:\\\\xampp\\\\htdocs\\\\trivya-rh\" -File | ForEach-Object { \"$\\($_.FullName.Replace\\('c:\\\\xampp\\\\htdocs\\\\trivya-rh\\\\',''\\)\\)  [$\\([math]::Round\\($_.Length/1KB,1\\)\\) KB]\" })",
+      "Bash(php/php.exe -r ' *)",
+      "Bash(/c/xampp/php/php.exe -d display_errors=1 -d error_reporting=32767 -r ' *)",
+      "Bash(/c/xampp/php/php.exe -d display_errors=1 -r ' *)",
+      "Bash(/c/xampp/php/php.exe -v)",
+      "Bash(/c/xampp/php/php.exe -r ' *)"
+    ]
+  }
+}

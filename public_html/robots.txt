@@ -1,0 +1,25 @@
+# ============================================================
+# Trivya RH — robots.txt
+# ============================================================
+
+User-agent: *
+Allow: /
+
+# Proteger áreas privadas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /assets/img/upload-cv/
+Disallow: /logs/
+Disallow: /config/
+Disallow: /includes/
+Disallow: /lib/
+Disallow: /database/
+
+# Não indexar páginas de erro e utilitárias
+Disallow: /public/obrigado.php
+Disallow: /public/404.php
+Disallow: /public/500.php
+
+# Sitemap
+Sitemap: http://localhost/trivya-rh/public/sitemap.xml
+# Em produção, atualizar para: Sitemap: https://trivyarh.com.br/sitemap.xml

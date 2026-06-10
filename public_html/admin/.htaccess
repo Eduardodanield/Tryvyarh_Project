@@ -1,0 +1,6 @@
+# Admin — proteção adicional
+Options -Indexes
+
+<FilesMatch "\.(env|log|sql|bak|md|lock|ini|conf)$">
+    Require all denied
+</FilesMatch>

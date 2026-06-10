@@ -1,0 +1,38 @@
+# ============================================================
+# Trivya RH — .gitignore
+# ============================================================
+
+# Variáveis de ambiente (dados sensíveis)
+.env
+
+# Logs gerados em tempo de execução
+/trivya-protected/logs/*
+!/trivya-protected/logs/.gitkeep
+
+# Currículos enviados por candidatos
+/public_html/uploads/curriculos/*
+!/public_html/uploads/curriculos/.gitkeep
+
+# Backups do banco de dados
+/trivya-protected/database/backups/
+/trivya-protected/database/*.bak.sql
+
+# IDEs e editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Dependências (caso venha a usar Composer futuramente)
+/vendor/
+
+# Cache e temporários
+/tmp/
+*.tmp
+*.cache
