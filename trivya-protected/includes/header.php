@@ -113,8 +113,8 @@ $ga4Id        = getConfig('ga4_measurement_id', GA4_MEASUREMENT_ID);
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Trivya RH">
 
-  <!-- Favicon (SVG inline referenciado via data URI — funciona sem arquivo externo) -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<?= rawurlencode('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><circle cx="60" cy="16" r="9.5" fill="%230ECAD4"/><line x1="60" y1="16" x2="20" y2="92" stroke="%23001233" stroke-width="2.5"/><line x1="60" y1="16" x2="100" y2="92" stroke="%23001233" stroke-width="2.5"/><line x1="20" y1="92" x2="100" y2="92" stroke="%23001233" stroke-width="2.5"/><circle cx="20" cy="92" r="9.5" fill="%230ECAD4"/><circle cx="100" cy="92" r="9.5" fill="%230ECAD4"/></svg>') ?>">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="<?= e(ASSETS_URL) ?>/img/logoheader.png">
 
   <!-- Google Fonts: preconnect + link -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -122,7 +122,7 @@ $ga4Id        = getConfig('ga4_measurement_id', GA4_MEASUREMENT_ID);
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Fraunces:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
 
   <!-- CSS da aplicação — ?v= força o browser a buscar a versão mais recente -->
-  <?php $v = '20260602'; /* atualizar ao fazer deploy */ ?>
+  <?php $v = '20260611b'; /* atualizar ao fazer deploy */ ?>
   <link rel="stylesheet" href="<?= e(ASSETS_URL) ?>/css/style.css?v=<?= $v ?>">
   <link rel="stylesheet" href="<?= e(ASSETS_URL) ?>/css/components.css?v=<?= $v ?>">
   <link rel="stylesheet" href="<?= e(ASSETS_URL) ?>/css/pages.css?v=<?= $v ?>">
@@ -135,7 +135,7 @@ $ga4Id        = getConfig('ga4_measurement_id', GA4_MEASUREMENT_ID);
     "@type": "Organization",
     "name": "<?= e(SITE_NAME) ?>",
     "url": "<?= e(SITE_URL) ?>",
-    "logo": "<?= e(ASSETS_URL) ?>/img/logo.svg",
+    "logo": "<?= e(ASSETS_URL) ?>/img/logocentral.png",
     "description": "<?= e(SITE_DESC) ?>",
     "address": {
       "@type": "PostalAddress",
@@ -204,7 +204,7 @@ $ga4Id        = getConfig('ga4_measurement_id', GA4_MEASUREMENT_ID);
 
       <!-- Logo (esquerda) -->
       <a href="<?= e(SITE_URL) ?>/" class="nav-logo" aria-label="Trivya RH — Início">
-        <?= renderLogo('pequeno', 'header') ?>
+        <?= renderLogo('header') ?>
         <div class="nav-logo-text">
           <span class="nav-logo-name">TRIVYA</span>
           <span class="nav-logo-sub">Consultoria de RH</span>

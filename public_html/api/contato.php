@@ -118,8 +118,8 @@ $hSegmento  = htmlspecialchars($segmento ?: '—');
 $hQtd       = htmlspecialchars($qtd_vagas);
 
 $blocoIfDificuldade = $dificuldade
-    ? '<h2 style="color:#C85A2A;font-size:16px;border-bottom:2px solid #F4E8E0;padding-bottom:8px;margin-top:24px;">Maior Dificuldade</h2>'
-      . '<p style="font-size:14px;color:#333;background:#F9F5F2;padding:12px;border-radius:6px;border-left:3px solid #C85A2A;">'
+    ? '<h2 style="color:#0077B6;font-size:16px;border-bottom:2px solid #CAF0F8;padding-bottom:8px;margin-top:24px;">Maior Dificuldade</h2>'
+      . '<p style="font-size:14px;color:#333;background:#F0F9FC;padding:12px;border-radius:6px;border-left:3px solid #0077B6;">'
       . nl2br(htmlspecialchars($dificuldade)) . '</p>'
     : '';
 
@@ -127,12 +127,12 @@ $htmlEmail =
     '<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><title>Novo Lead — Trivya RH</title></head>'
     . '<body style="font-family:Arial,sans-serif;background:#F5F5F5;margin:0;padding:20px;">'
     . '<div style="max-width:600px;margin:0 auto;background:#FFFFFF;border-radius:8px;overflow:hidden;border:1px solid #E0E0E0;">'
-    . '<div style="background:#C85A2A;padding:24px 32px;">'
+    . '<div style="background:#0077B6;padding:24px 32px;">'
     . '<h1 style="color:#FFFFFF;margin:0;font-size:20px;">&#127970; Novo Lead &mdash; Trivya RH</h1>'
     . '<p style="color:rgba(255,255,255,0.8);margin:4px 0 0;font-size:14px;">' . $dataHora . '</p>'
     . '</div>'
     . '<div style="padding:32px;">'
-    . '<h2 style="color:#C85A2A;font-size:16px;border-bottom:2px solid #F4E8E0;padding-bottom:8px;margin-top:0;">Dados da Empresa</h2>'
+    . '<h2 style="color:#0077B6;font-size:16px;border-bottom:2px solid #CAF0F8;padding-bottom:8px;margin-top:0;">Dados da Empresa</h2>'
     . '<table style="width:100%;border-collapse:collapse;font-size:14px;">'
     . '<tr><td style="padding:6px 0;color:#666;width:40%;">Empresa</td><td style="padding:6px 0;font-weight:600;">' . $hEmpresa . '</td></tr>'
     . '<tr><td style="padding:6px 0;color:#666;">Respons&aacute;vel</td><td style="padding:6px 0;font-weight:600;">' . $hNome . '</td></tr>'
@@ -140,7 +140,7 @@ $htmlEmail =
     . '<tr><td style="padding:6px 0;color:#666;">E-mail</td><td style="padding:6px 0;">' . $hEmail . '</td></tr>'
     . '<tr><td style="padding:6px 0;color:#666;">Cidade/Estado</td><td style="padding:6px 0;">' . $hCidade . '</td></tr>'
     . '</table>'
-    . '<h2 style="color:#C85A2A;font-size:16px;border-bottom:2px solid #F4E8E0;padding-bottom:8px;margin-top:24px;">Sobre a Contrata&ccedil;&atilde;o</h2>'
+    . '<h2 style="color:#0077B6;font-size:16px;border-bottom:2px solid #CAF0F8;padding-bottom:8px;margin-top:24px;">Sobre a Contrata&ccedil;&atilde;o</h2>'
     . '<table style="width:100%;border-collapse:collapse;font-size:14px;">'
     . '<tr><td style="padding:6px 0;color:#666;width:40%;">Cargo/&Aacute;rea</td><td style="padding:6px 0;font-weight:600;">' . $hCargo . '</td></tr>'
     . '<tr><td style="padding:6px 0;color:#666;">Segmento</td><td style="padding:6px 0;">' . $hSegmento . '</td></tr>'

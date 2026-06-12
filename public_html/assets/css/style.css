@@ -6,24 +6,56 @@
 :root {
     color-scheme: light;
 
-    /* PALETA OFICIAL TRIVYA RH */
-    --brand:    #C85A2A;    /* terracota — cor primária */
-    --brand-lt: #F4E8E0;    /* terracota claro — badges, fundo suave */
-    --brand-dk: #9A3E17;    /* terracota escuro — hover, ênfase */
+    /* ============================================================
+       ESCALA DE AZUIS — TRIVYA RH (do mais claro ao mais escuro)
+       Numeração estilo Tailwind: 50 = quase branco, 950 = quase preto
+       ============================================================ */
+    --blue-50:  #F4FBFD;   /* gelo quase branco — fundo de descanso */
+    --blue-100: #E3F4FA;   /* gelo azulado — fundos alternados suaves */
+    --blue-200: #C2E8F5;   /* azul pálido — bordas claras, hover suave */
+    --blue-300: #8FD3EC;   /* azul claro — detalhes, ícones secundários */
+    --blue-400: #48B5DC;   /* azul médio-claro — acentos, badges */
+    --blue-500: #0096C7;   /* azul vibrante — links, destaques */
+    --blue-600: #0077B6;   /* azul forte — CTAs, botões (cor de AÇÃO) */
+    --blue-700: #015E92;   /* azul profundo — hover de CTA */
+    --blue-800: #023E6B;   /* azul escuro — sub-headers, gradientes */
+    --blue-900: #06285A;   /* navy — seções escuras (diferenciais) */
+    --blue-950: #041838;   /* navy profundo — footer (máxima seriedade) */
 
-    /* ── Texto ── */
-    --dark:   #1A1A1A;      /* texto principal */
-    --mid:    #4A4A4A;      /* texto secundário */
-    --muted:  #8A8A8A;      /* texto desabilitado */
+    /* ============================================================
+       TOKENS SEMÂNTICOS (uso no código — apontam para a escala)
+       ============================================================ */
+    /* Ação (CTAs, botões, links) */
+    --brand:        var(--blue-600);
+    --brand-hover:  var(--blue-700);
+    --brand-lt:     var(--blue-100);
+    --brand-dk:     var(--blue-800);
 
-    /* ── Fundos e bordas ── */
-    --border: #E0D8CE;      /* borda bege quente */
-    --bg:     #F5EFE8;      /* bege quente — fundo principal */
-    --white:  #EDE6DC;      /* bege claro — cards, surfaces */
+    /* Acento (badges, números, detalhes vivos) */
+    --accent:       var(--blue-500);
+    --accent-lt:    var(--blue-300);
 
-    /* ── Corporativo / Dark sections ── */
-    --navy:    #1B2B3A;     /* navy — títulos */
-    --navy-dk: #001233;     /* navy escuro — footer, diferenciais */
+    /* Fundos (hierarquia de superfícies) */
+    --bg:           var(--blue-50);    /* fundo principal: gelo, quase branco */
+    --bg-alt:       var(--blue-100);   /* seções alternadas */
+    --surface:      #FFFFFF;           /* cards: branco puro p/ "flutuar" */
+    --border:       var(--blue-200);
+    --border-dk:    var(--blue-400);
+
+    /* Seções escuras */
+    --navy:         var(--blue-900);   /* diferenciais */
+    --navy-dk:      var(--blue-950);   /* footer */
+
+    /* Texto */
+    --dark:         #0B2239;           /* texto principal (azul-grafite) */
+    --mid:          #3D5468;           /* texto secundário */
+    --muted:        #7C90A0;           /* hints, placeholders */
+    --text-on-dark: #E9F4F9;           /* texto sobre fundos navy */
+
+    /* Estados */
+    --success:      #22C55E;
+    --danger:       #EF4444;
+    --warning:      #F59E0B;
 
     /* ── SPACING SCALE — base 8px ── */
     --space-xs:  8px;
@@ -66,7 +98,7 @@ body {
     font-size: 16px;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
-    background-color: #F5EFE8;
+    background-color: var(--bg);
 }
 
 img { max-width: 100%; height: auto; display: block; }

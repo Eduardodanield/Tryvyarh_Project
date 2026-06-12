@@ -117,10 +117,10 @@ $csrfContato = generateCsrf('contato');
     </div>
   </div>
 
-  <!-- Visual decorativo: logo grande dentro de círculo bege -->
+  <!-- Visual decorativo: logo grande dentro de círculo -->
   <div class="hero-visual" aria-hidden="true">
     <div class="hero-visual-bg">
-      <?= renderLogo('grande', 'header') ?>
+      <?= renderLogo('hero') ?>
     </div>
 
     <div class="hero-badge">

@@ -37,6 +37,8 @@ $urlTermos    = SITE_URL . '/termos-uso';
 
     <!-- Coluna 1: Nome + descrição + redes sociais -->
     <div>
+      <?= renderLogo('footer') ?>
+
       <p class="footer-logo-name" style="font-size:20px; font-weight:700; letter-spacing:2px; color:#FFFFFF; margin-bottom:10px;">
         TRIVYA
       </p>
